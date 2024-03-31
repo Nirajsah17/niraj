@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to Wonder Land
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -9,6 +9,13 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
+
+``` py title="init.py"
+def add (a,b):
+  return a + b
+```
+
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
@@ -18,7 +25,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### Code 
 
-``` py title="sort.py linenums=1"
+``` py linenums="2"
 def sort():
     return pass
 ```
