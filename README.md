@@ -1,2 +1,3 @@
 # wonder-land
-Personal docs
+
+Practice repository
