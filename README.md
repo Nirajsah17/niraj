@@ -1,3 +1,3 @@
-# wonder-land
+# Practice
 
 Practice repository

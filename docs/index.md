@@ -1,4 +1,4 @@
-# Welcome to Wonder Land
+# Welcome to Practice
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

@@ -1,4 +1,4 @@
-site_name: Wonder Land
+site_name: Practice
 site_url: ""
 theme:
   name: material
@@ -54,9 +54,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
   &copy; 2024 <a href="https://github.com/Nirajsah17/"  target="_blank" rel="noopener">Niraj Sah</a>
