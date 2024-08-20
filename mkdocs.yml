@@ -1,4 +1,4 @@
-site_name: Practice
+site_name: Niraj Kumar
 site_url: ""
 theme:
   name: material
@@ -40,6 +40,12 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: http://linkedin.com/in/niraj-kumar-21142817b/
       
+nav:
+  - Getting started: index.md
+  - Github:
+    - github-jekyl.md
+
+
 
 markdown_extensions:
   - pymdownx.highlight:
