@@ -1,5 +1,5 @@
-site_name: Niraj Kumar
-site_url: ""
+site_name: Niraj Kumar Sah
+site_url: "https://nirajsah17.github.io/Nirajsah17/"
 theme:
   name: material
   features:
@@ -44,8 +44,10 @@ nav:
   - Getting started: index.md
   - Github:
     - github-jekyl.md
-
-
+  - Computer Vision:
+    - index.md
+  - Web Development:
+    - index.html
 
 markdown_extensions:
   - pymdownx.highlight:
