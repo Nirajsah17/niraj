@@ -45,9 +45,10 @@ nav:
   - Github:
     - github-jekyl.md
   - Computer Vision:
-    - index.md
+    - computer_vision/index.md
   - Web Development:
-    - index.html
+    - web_development/index.html
+  - Examples: example.md
 
 markdown_extensions:
   - pymdownx.highlight:
