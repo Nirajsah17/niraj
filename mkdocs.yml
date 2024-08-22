@@ -49,6 +49,9 @@ nav:
   - Web Development:
     - web_development/index.html
   - Examples: example.md
+  - Packages:
+    - package/observable.md
+    - package/queue.md
 
 markdown_extensions:
   - pymdownx.highlight:
