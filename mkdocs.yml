@@ -48,6 +48,8 @@ nav:
     - computer_vision/index.md
   - Web Development:
     - web_development/index.html
+  - Python Stack:
+    - python_stack/python_programming.md
   - Examples: example.md
   - Packages:
     - package/observable.md
