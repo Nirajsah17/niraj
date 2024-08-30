@@ -842,15 +842,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assigning-values-to-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assigning Values to Variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#multiple-assignment" class="md-nav__link">
     <span class="md-ellipsis">
       Multiple Assignment
@@ -954,6 +945,30 @@
   <a href="#ifelifelse-statement" class="md-nav__link">
     <span class="md-ellipsis">
       if...elif...else statement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python - Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python - Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The while Loop
     </span>
   </a>
   
@@ -1372,10 +1387,13 @@
 <a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="p">[</span> <span class="n">etc</span><span class="o">.</span> <span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="python-variable-types">Python - Variable Types</h2>
-<p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable, you reserve some space in memory.</p>
-<p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.</p>
-<h2 id="assigning-values-to-variables">Assigning Values to Variables</h2>
-<p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.</p>
+<p>Variables are nothing but reserved memory locations to store values. This means that when you create a variablstr = 'Hello World!'
+print(str)           # Prints complete string
+print(str[0])        # Prints first character of the string
+print(str[2:5])      # Prints characters starting from 3rd to 5th</p>
+<p>print(str[2:])       # Prints string starting from 3rd character<br />
+print(str * 2)       # Prints string two times
+print(str + "TEST")  # Prints concatenated stringlicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.</p>
 <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
 <span class="normal"><a href="#__codelineno-13-2">2</a></span>
@@ -1501,73 +1519,69 @@
 <span class="normal"><a href="#__codelineno-24-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="p">[</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">]</span>
 <a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="n">abcd</span>
 <a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="p">[</span><span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">]</span>
-<a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="p">[</span><span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">]</span>
-<a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="p">[</span><span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;joif expression:</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
 <a id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="p">[</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="python-tuples">Python Tuples</h2>
 <p>A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.</p>
 <p>The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. For example −</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
-<span class="normal"><a href="#__codelineno-25-2">2</a></span>
-<span class="normal"><a href="#__codelineno-25-3">3</a></span>
-<span class="normal"><a href="#__codelineno-25-4">4</a></span>
-<span class="normal"><a href="#__codelineno-25-5">5</a></span>
-<span class="normal"><a href="#__codelineno-25-6">6</a></span>
-<span class="normal"><a href="#__codelineno-25-7">7</a></span>
-<span class="normal"><a href="#__codelineno-25-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="nb">tuple</span> <span class="o">=</span> <span class="p">(</span> <span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.2</span>  <span class="p">)</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="n">tinytuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
-<a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">)</span>             <span class="c1"># Prints complete tuple</span>
-<a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>          <span class="c1"># Prints first element of the tuple</span>
-<a id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>        <span class="c1"># Prints elements starting from 2nd till 3rd</span>
-<a id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>         <span class="c1"># Prints elements starting from 3rd element</span>
-<a id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinytuple</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>     <span class="c1"># Prints tuple two times </span>
-<a id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span> <span class="o">+</span> <span class="n">tinytuple</span><span class="p">)</span> <span class="c1"># Prints concatenated tuple</span>
-</code></pre></div></td></tr></table></div>
-<p>This will produce the following result −</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<p>``` pytif expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)            # Prints complete tuple
+print(tuple[0])          # Prints first element of the tuple
+print(tuple[1:3])        # Prints elements starting from 2nd till 3rd
+print(tuple[2:])         # Prints elements starting from 3rd element
+print(tinytuple * 2)     # Prints tuple two times 
+print(tuple + tinytuple) # Prints concatenated tuple
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>This will produce the following result −
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>``` python linenums=&quot;1&quot;
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>(&#39;abcd&#39;, 786, 2.23, &#39;john&#39;, 70.20000000000if expression1:
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>   statement(s)
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>elif expression2:
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>   statement(s)
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>elif expression3:
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>   statement(s)
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>else:
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>   statement(s)00000000003, 123, &#39;john&#39;)
+</code></pre></div></p>
+<h2 id="python-dictionary">Python Dictionary</h2>
+<p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.</p>
+<p>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
 <span class="normal"><a href="#__codelineno-26-2">2</a></span>
 <span class="normal"><a href="#__codelineno-26-3">3</a></span>
 <span class="normal"><a href="#__codelineno-26-4">4</a></span>
 <span class="normal"><a href="#__codelineno-26-5">5</a></span>
-<span class="normal"><a href="#__codelineno-26-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">)</span> 
-<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="n">abcd</span>
-<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="p">(</span><span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">)</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="p">(</span><span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">)</span>
-<a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
-<a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-26-6">6</a></span>
+<span class="normal"><a href="#__codelineno-26-7">7</a></span>
+<span class="normal"><a href="#__codelineno-26-8">8</a></span>
+<span class="normal"><a href="#__codelineno-26-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;This is one&quot;</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>     <span class="o">=</span> <span class="s2">&quot;This is two&quot;</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="n">tinydict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span><span class="s1">&#39;code&#39;</span><span class="p">:</span><span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">}</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">])</span>       <span class="c1"># Prints value for &#39;one&#39; key</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>           <span class="c1"># Prints value for 2 key</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="p">)</span>          <span class="c1"># Prints complete dictionary</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>   <span class="c1"># Prints all the keys</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="c1"># Prints all the values</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="python-dictionary">Python Dictionary</h2>
-<p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.</p>
-<p>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example −</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<p>This will produce the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
 <span class="normal"><a href="#__codelineno-27-2">2</a></span>
 <span class="normal"><a href="#__codelineno-27-3">3</a></span>
 <span class="normal"><a href="#__codelineno-27-4">4</a></span>
-<span class="normal"><a href="#__codelineno-27-5">5</a></span>
-<span class="normal"><a href="#__codelineno-27-6">6</a></span>
-<span class="normal"><a href="#__codelineno-27-7">7</a></span>
-<span class="normal"><a href="#__codelineno-27-8">8</a></span>
-<span class="normal"><a href="#__codelineno-27-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
-<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;This is one&quot;</span>
-<a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>     <span class="o">=</span> <span class="s2">&quot;This is two&quot;</span>
-<a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="n">tinydict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span><span class="s1">&#39;code&#39;</span><span class="p">:</span><span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">}</span>
-<a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">])</span>       <span class="c1"># Prints value for &#39;one&#39; key</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>           <span class="c1"># Prints value for 2 key</span>
-<a id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="p">)</span>          <span class="c1"># Prints complete dictionary</span>
-<a id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>   <span class="c1"># Prints all the keys</span>
-<a id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="c1"># Prints all the values</span>
-</code></pre></div></td></tr></table></div>
-<p>This will produce the following result −</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
-<span class="normal"><a href="#__codelineno-28-2">2</a></span>
-<span class="normal"><a href="#__codelineno-28-3">3</a></span>
-<span class="normal"><a href="#__codelineno-28-4">4</a></span>
-<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">one</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">two</span>
-<a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="p">{</span><span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">}</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="p">[</span><span class="s1">&#39;dept&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">]</span>
-<a id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">one</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">two</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="p">{</span><span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">}</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="p">[</span><span class="s1">&#39;dept&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="data-type-conversion">Data Type Conversion</h2>
 <p>Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type-name as a function.</p>
@@ -1601,9 +1615,9 @@
 <p>Decision making is required when we want to execute a code only if a certain condition is satisfied.</p>
 <p>The <code>if…elif…else</code> statement is used in Python for decision making.</p>
 <h3 id="if-statement-syntax">if statement syntax</h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
-<span class="normal"><a href="#__codelineno-29-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">if</span> <span class="n">expression</span><span class="p">:</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="k">if</span> <span class="n">expression</span><span class="p">:</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>Here, the program evaluates the <code>expression</code> and will execute <code>statement(s)</code> only if the <code>expression</code> is <code>True</code>.</p>
 <p>If the <code>expression</code> is <code>False</code>, the statement(s) is not executed.</p>
@@ -1611,45 +1625,41 @@
 <h3 id="ifelifelse-statement">if...elif...else statement</h3>
 <p>An <code>if</code> statement can be followed by an optional <code>elif...else</code> statement, which is very useful to test various conditions using single <code>if...elif...else</code> statement.</p>
 <p>Here is the syntax of <code>if...elif...else</code> statement −</p>
-<p>``` python tiyt="example.py" linenums="1"
-if expression1:
-   statement(s)
-elif expression2:
-   statement(s)
-elif expression3:
-   statement(s)
-else:
-   statement(s)
-<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>The `elif` is short for else if. It allows us to check for multiple expressions.
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
-<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
-<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>If the `expression1` is `True`, it executes the `statement(s)` that are present inside the `if` block. If `expression1` is `False`, it checks the `expression2` and executes the `statement(s)` that are present inside the `elif` block.
-<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
-<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>The `elif` block is `executed` if the `first` `expression` is `False`.
-<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
-<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>If none of the expressions is `True`, the `else` block is executed.
-<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>
-<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>## Python - Loops
-<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>
-<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>Python programming language provides following types of loops to handle looping requirements.
-<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>
-<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>- `while` loop
-<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>- `for` loop
-<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>
-<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>### The `while` Loop
-<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>
-<a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a>A `while` loop statement in Python programming language repeatedly executes a target statement as long as a given condition is `True`.
-<a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a>
-<a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a>Here, `statement(s)` may be a single statement or a block of statements. The `condition` may be any expression, and `true` is any non-zero value. The loop iterates while the `condition` is `true`.
-<a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a>
-<a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a>When the `condition` becomes `false`, program control passes to the line immediately following the loop.
-<a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a>
-<a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a>The syntax of a `while` loop in Python programming language is −
-<a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a>
-<a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a>``` python title=&quot;example.py&quot; linenums=&quot;1&quot;
-<a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a>while expression:
-<a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a>   statement(s)
-</code></pre></div></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span>
+<span class="normal"><a href="#__codelineno-29-4">4</a></span>
+<span class="normal"><a href="#__codelineno-29-5">5</a></span>
+<span class="normal"><a href="#__codelineno-29-6">6</a></span>
+<span class="normal"><a href="#__codelineno-29-7">7</a></span>
+<span class="normal"><a href="#__codelineno-29-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">if</span> <span class="n">expression1</span><span class="p">:</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a><span class="k">elif</span> <span class="n">expression2</span><span class="p">:</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5"></a><span class="k">elif</span> <span class="n">expression3</span><span class="p">:</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>elif</code> is short for else if. It allows us to check for multiple expressions.</p>
+<p>If the <code>expression1</code> is <code>True</code>, it executes the <code>statement(s)</code> that are present inside the <code>if</code> block. If <code>expression1</code> is <code>False</code>, it checks the <code>expression2</code> and executes the <code>statement(s)</code> that are present inside the <code>elif</code> block.</p>
+<p>The <code>elif</code> block is <code>executed</code> if the <code>first</code> <code>expression</code> is <code>False</code>.</p>
+<p>If none of the expressions is <code>True</code>, the <code>else</code> block is executed.</p>
+<h2 id="python-loops">Python - Loops</h2>
+<p>Python programming language provides following types of loops to handle looping requirements.</p>
+<ul>
+<li><code>while</code> loop</li>
+<li><code>for</code> loop</li>
+</ul>
+<h3 id="the-while-loop">The <code>while</code> Loop</h3>
+<p>A <code>while</code> loop statement in Python programming language repeatedly executes a target statement as long as a given condition is <code>True</code>.</p>
+<p>Here, <code>statement(s)</code> may be a single statement or a block of statements. The <code>condition</code> may be any expression, and <code>true</code> is any non-zero value. The loop iterates while the <code>condition</code> is <code>true</code>.</p>
+<p>When the <code>condition</code> becomes <code>false</code>, program control passes to the line immediately following the loop.</p>
+<p>The syntax of a <code>while</code> loop in Python programming language is −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="k">while</span> <span class="n">expression</span><span class="p">:</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <p>Here, <code>statement(s)</code> may be a single statement or a block of statements. The <code>condition</code> may be any expression, and <code>true</code> is any non-zero value. The loop iterates while the <code>condition</code> is <code>true</code>.</p>
 <p>When the <code>condition</code> becomes <code>false</code>, program control passes to the line immediately following the loop.</p>
 <h3 id="the-for-loop">The <code>for</code> Loop</h3>
