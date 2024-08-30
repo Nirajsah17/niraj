@@ -27,7 +27,8 @@ theme:
       primary: teal
       accent: lime
 
-# plugins:
+plugins:
+  # - git-snippet
 #   - social
 #   - search
 
@@ -50,14 +51,21 @@ nav:
     - web_development/index.html
   - Python Stack:
     - python_stack/python_programming.md
+    - python_stack/snippet.md
   - Examples: example.md
   - Packages:
     - package/observable.md
     - package/queue.md
 
 markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_class: toc-permalink
   - pymdownx.highlight:
       anchor_linenums: true
+  - codehilite:
+      guess_lang: False
+  - tables
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
