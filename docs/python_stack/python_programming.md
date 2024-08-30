@@ -230,13 +230,14 @@ Options and arguments (and corresponding environment variables):
 
 ## Python - Variable Types
 
-Variables are nothing but reserved memory locations to store values. This means that when you create a variable, you reserve some space in memory.
+Variables are nothing but reserved memory locations to store values. This means that when you create a variablstr = 'Hello World!'
+print(str)           # Prints complete string
+print(str[0])        # Prints first character of the string
+print(str[2:5])      # Prints characters starting from 3rd to 5th
 
-Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
-
-## Assigning Values to Variables
-
-Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+print(str[2:])       # Prints string starting from 3rd character  
+print(str * 2)       # Prints string two times
+print(str + "TEST")  # Prints concatenated stringlicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
 
 The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −
 
@@ -376,8 +377,8 @@ This will produce the following result −
 ['abcd', 786, 2.23, 'john', 70.200000000000003]
 abcd
 [786, 2.23]
-[2.23, 'john', 70.200000000000003]
-[123, 'john', 123, 'john']
+[2.23, 'joif expression:
+   statement(s) 'john', 123, 'john']
 ['abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john']
 ```
 
@@ -387,10 +388,14 @@ A tuple is another sequence data type that is similar to the list. A tuple consi
 
 The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. For example −
 
-``` python title="example.py" linenums="1"
-tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
-tinytuple = (123, 'john')
-print(tuple)             # Prints complete tuple
+``` pytif expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)            # Prints complete tuple
 print(tuple[0])          # Prints first element of the tuple
 print(tuple[1:3])        # Prints elements starting from 2nd till 3rd
 print(tuple[2:])         # Prints elements starting from 3rd element
@@ -401,12 +406,14 @@ print(tuple + tinytuple) # Prints concatenated tuple
 This will produce the following result −
 
 ``` python linenums="1"
-('abcd', 786, 2.23, 'john', 70.200000000000003) 
-abcd
-(786, 2.23)
-(2.23, 'john', 70.200000000000003)
-(123, 'john', 123, 'john')
-('abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john')
+('abcd', 786, 2.23, 'john', 70.20000000000if expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)00000000003, 123, 'john')
 ```
 
 ## Python Dictionary
@@ -494,7 +501,7 @@ An `if` statement can be followed by an optional `elif...else` statement, which 
 
 Here is the syntax of `if...elif...else` statement −
 
-``` python tiyt="example.py" linenums="1"
+``` python title="example.py" linenums="1"
 if expression1:
    statement(s)
 elif expression2:
