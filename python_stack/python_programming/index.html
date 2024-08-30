@@ -1,0 +1,1825 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://nirajsah17.github.io/Nirajsah17/python_stack/python_programming/">
+      
+      
+        <link rel="prev" href="../../computer_vision/">
+      
+      
+        <link rel="next" href="../../example/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.16">
+    
+    
+      
+        <title>Python Programming - Niraj Kumar Sah</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Niraj Kumar Sah" class="md-header__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Niraj Kumar Sah
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python Programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Getting started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../github-jekyl/" class="md-tabs__link">
+          
+  
+  Github
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../computer_vision/" class="md-tabs__link">
+          
+  
+  Computer Vision
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web_development/index.html" class="md-tabs__link">
+          
+  
+  Web Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Python Stack
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example/" class="md-tabs__link">
+        
+  
+    
+  
+  Examples
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../package/observable/" class="md-tabs__link">
+          
+  
+  Packages
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Niraj Kumar Sah" class="md-nav__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Niraj Kumar Sah
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Github
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../github-jekyl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github jekyll setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computer_vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Web Development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Web Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web_development/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Python Stack
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Python Stack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python Programming
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Python Programming
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Environment Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Environment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local Environment Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-python-compilers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Python Compilers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Syntax
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Identifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reserved-words" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reserved Words
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lines-and-indentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lines and Indentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-line-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multi-Line Statements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quotation-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotation in Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments in Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-blank-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Blank Lines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waiting-for-the-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waiting for the User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-statements-on-a-single-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Statements on a Single Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-statement-groups-as-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Statement Groups as Suites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Arguments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-variable-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python - Variable Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-values-to-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning Values to Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiple Assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standard-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Data Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Strings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-tuples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Tuples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Dictionary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Type Conversion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-basic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python - Basic Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python - Decision Making
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python - Decision Making">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-statement-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      if statement syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ifelifelse-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      if...elif...else statement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      The for Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python - Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python - Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#defining-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining a Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calling a Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Packages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Packages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/observable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Observable Hooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/queue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Queue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="python-programming">Python Programming</h1>
+<p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+<p>Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:</p>
+<ul>
+<li>
+<p><strong>Python is Interpreted</strong> − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</p>
+</li>
+<li>
+<p><strong>Python is Interactive</strong> − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</p>
+</li>
+<li>
+<p><strong>Python is Object-Oriented</strong> − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</p>
+</li>
+<li>
+<p><strong>Python is a Beginner's Language</strong> − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</p>
+</li>
+</ul>
+<h2 id="python-features">Python Features</h2>
+<p>Python's features include −</p>
+<ul>
+<li>
+<p><strong>Easy-to-learn</strong> − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</p>
+</li>
+<li>
+<p><strong>Easy-to-read</strong> − Python code is more clearly defined and visible to the eyes.</p>
+</li>
+<li>
+<p><strong>Easy-to-maintain</strong> − Python's source code is fairly easy-to-maintain.</p>
+</li>
+<li>
+<p><strong>A broad standard library</strong> − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.</p>
+</li>
+<li>
+<p><strong>Interactive Mode</strong> − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.</p>
+</li>
+<li>
+<p><strong>Portable</strong> − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</p>
+</li>
+<li>
+<p><strong>Extendable</strong> − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.</p>
+</li>
+<li>
+<p><strong>Databases</strong> − Python provides interfaces to all major commercial databases.</p>
+</li>
+<li>
+<p><strong>GUI Programming</strong> − Python supports GUI applications that can be created and ported to many system calls, libraries, and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.</p>
+</li>
+<li>
+<p><strong>Scalable</strong> − Python provides a better structure and support for large programs than shell scripting.</p>
+</li>
+</ul>
+<p>Apart from the above-mentioned features, Python has a big list of good features, few are listed below −</p>
+<ul>
+<li>It supports functional and structured programming methods as well as OOP.</li>
+<li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+<li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+<li>It supports automatic garbage collection.</li>
+<li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+</ul>
+<h2 id="python-environment-setup">Python Environment Setup</h2>
+<p>Python is available on a wide variety of platforms including Linux and Mac OS X. Let's understand how to set up our Python environment.</p>
+<h3 id="local-environment-setup">Local Environment Setup</h3>
+<p>If you are still willing to set up your environment for Python, you need to set up the Python environment on your computer. Depending on your operating system, you can follow any of the following guides to install Python on your computer.</p>
+<ul>
+<li><a href="https://www.tutorialspoint.com/python/python_environment.htm">How to set up Python on Windows?</a></li>
+<li><a href="https://www.tutorialspoint.com/python/python_environment.htm">How to set up Python on Linux?</a></li>
+<li><a href="https://www.tutorialspoint.com/python/python_environment.htm">How to set up Python on Mac?</a></li>
+</ul>
+<h3 id="online-python-compilers">Online Python Compilers</h3>
+<p>If you don't want to set up your environment, you can use online Python compilers. Here are some of the popular online Python compilers:</p>
+<ul>
+<li><a href="https://www.tutorialspoint.com/execute_python_online.php">Python (v2.7.13)</a></li>
+<li><a href="https://www.tutorialspoint.com/execute_python3_online.php">Python (v3.2.3)</a></li>
+</ul>
+<h2 id="python-syntax">Python Syntax</h2>
+<p>Python was designed to for readability, and has some similarities to the English language with influence from mathematics. Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</p>
+<p>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</p>
+<p>Here is an example of Python code that uses indentation:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="k">break</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="python-identifiers">Python Identifiers</h2>
+<p>A Python identifier is a name used to identify a variable, function, class, module or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).</p>
+<p>Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. Thus, <code>Manpower</code> and <code>manpower</code> are two different identifiers in Python.</p>
+<p>Here are naming conventions for Python identifiers −</p>
+<ul>
+<li>Class names start with an uppercase letter. All other identifiers start with a lowercase letter.</li>
+<li>Starting an identifier with a single leading underscore indicates that the identifier is private.</li>
+<li>Starting an identifier with two leading underscores indicates a strongly private identifier.</li>
+<li>If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.</li>
+</ul>
+<h2 id="reserved-words">Reserved Words</h2>
+<p>The following list shows the Python keywords. These are reserved words and you cannot use them as constants or variables or any other identifier names. All the Python keywords contain lowercase letters only.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="ow">and</span>       <span class="n">exec</span>      <span class="ow">not</span>      <span class="k">assert</span>    <span class="k">finally</span>   <span class="ow">or</span>        <span class="k">break</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">for</span>       <span class="k">pass</span>      <span class="k">class</span>    <span class="nc">from</span>      <span class="nb">print</span>     <span class="k">continue</span>  <span class="k">global</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">raise</span>     <span class="k">def</span>       <span class="nf">if</span>       <span class="k">return</span>    <span class="k">del</span>       <span class="kn">import</span>    <span class="nn">try</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="k">elif</span>      <span class="ow">in</span>        <span class="k">while</span>    <span class="k">else</span>      <span class="ow">is</span>        <span class="k">with</span>      <span class="k">except</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">lambda</span>    <span class="k">yield</span>     <span class="kc">False</span>    <span class="kc">True</span>      <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="lines-and-indentation">Lines and Indentation</h2>
+<p>Python provides no braces to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</p>
+<p>The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;True&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;False&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>However, the following block generates an error −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;True&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;False&quot;</span><span class="p">)</span>  <span class="c1"># IndentationError: unexpected indent</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="multi-line-statements">Multi-Line Statements</h2>
+<p>Statements in Python typically end with a new line. Python does, however, allow the use of the line continuation character () to denote that the line should continue. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">total</span> <span class="o">=</span> <span class="n">item_one</span> <span class="o">+</span> \
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>        <span class="n">item_two</span> <span class="o">+</span> \
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>        <span class="n">item_three</span>
+</code></pre></div></td></tr></table></div>
+<p>Statements contained within the <code>[], {}, or ()</code> brackets do not need to use the line continuation character. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">days</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>        <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="quotation-in-python">Quotation in Python</h2>
+<p>Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the same type of quote starts and ends the string.</p>
+<p>The triple quotes are used to span the string across multiple lines. For example, all the following are legal −</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;word&#39;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;This is a sentence.&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">paragraph</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;This is a paragraph. It is</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="s2">made up of multiple lines and sentences.&quot;&quot;&quot;</span>
+</code></pre></div>
+<h2 id="comments-in-python">Comments in Python</h2>
+<p>A hash sign (#) that is not inside a string literal begins a comment. All characters after the # and up to the end of the physical line are part of the comment and the Python interpreter ignores them.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># First comment</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Python!&quot;</span><span class="p">)</span>  <span class="c1"># second comment</span>
+</code></pre></div></td></tr></table></div>
+<p>This produces the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">Hello</span><span class="p">,</span> <span class="n">Python</span><span class="err">!</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="using-blank-lines">Using Blank Lines</h2>
+<p>A line containing only whitespace, possibly with a comment, is known as a blank line and Python totally ignores it.</p>
+<p>In an interactive interpreter session, you must enter an empty physical line to terminate a multiline statement.</p>
+<h2 id="waiting-for-the-user">Waiting for the User</h2>
+<p>The following line of the program displays the prompt, the statement saying "Press the enter key to exit", and waits for the user to take action −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Press the enter key to exit.&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Here, <code>\n\n</code> is used to create two new lines before displaying the actual line. Once the user presses the key, the program ends. This is a nice trick to keep a console window open until the user is done with an application.</p>
+<h2 id="multiple-statements-on-a-single-line">Multiple Statements on a Single Line</h2>
+<p>The semicolon ( ; ) allows multiple statements on the single line given that neither statement starts a new code block. Here is a sample snip using the semicolon −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kn">import</span> <span class="nn">sys</span><span class="p">;</span> <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;foo&#39;</span><span class="p">;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="multiple-statement-groups-as-suites">Multiple Statement Groups as Suites</h2>
+<p>A group of individual statements, which make a single code block are called suites in Python. Compound or complex statements, such as if, while, def, and class require a header line and a suite.</p>
+<p>Header lines begin the statement (with the keyword) and terminate with a colon ( : ) and are followed by one or more lines which make up the suite. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">if</span> <span class="n">expression</span> <span class="p">:</span> 
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>   <span class="n">suite</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">elif</span> <span class="n">expression</span> <span class="p">:</span> 
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>   <span class="n">suite</span> 
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="k">else</span> <span class="p">:</span> 
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a>   <span class="n">suite</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="command-line-arguments">Command Line Arguments</h2>
+<p>Many programs can be run to provide you with some basic information about how they should be run. Python enables you to do this with -h −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span>
+<span class="normal"><a href="#__codelineno-12-7">7</a></span>
+<span class="normal"><a href="#__codelineno-12-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="err">$</span> <span class="n">python</span> <span class="o">-</span><span class="n">h</span>   
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="n">usage</span><span class="p">:</span> <span class="n">python</span> <span class="p">[</span><span class="n">option</span><span class="p">]</span> <span class="o">...</span> <span class="p">[</span><span class="o">-</span><span class="n">c</span> <span class="n">cmd</span> <span class="o">|</span> <span class="o">-</span><span class="n">m</span> <span class="n">mod</span> <span class="o">|</span> <span class="n">file</span> <span class="o">|</span> <span class="o">-</span><span class="p">]</span> <span class="p">[</span><span class="n">arg</span><span class="p">]</span> <span class="o">...</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="n">Options</span> <span class="ow">and</span> <span class="n">arguments</span> <span class="p">(</span><span class="ow">and</span> <span class="n">corresponding</span> <span class="n">environment</span> <span class="n">variables</span><span class="p">):</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="o">-</span><span class="n">c</span> <span class="n">cmd</span> <span class="p">:</span> <span class="n">program</span> <span class="n">passed</span> <span class="ow">in</span> <span class="k">as</span> <span class="n">string</span> <span class="p">(</span><span class="n">terminates</span> <span class="n">option</span> <span class="nb">list</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="o">-</span><span class="n">d</span>     <span class="p">:</span> <span class="n">debug</span> <span class="n">output</span> <span class="kn">from</span> <span class="nn">parser</span> <span class="p">(</span><span class="n">also</span> <span class="n">PYTHONDEBUG</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="o">-</span><span class="n">E</span>     <span class="p">:</span> <span class="n">ignore</span> <span class="n">environment</span> <span class="n">variables</span> <span class="p">(</span><span class="n">such</span> <span class="k">as</span> <span class="n">PYTHONPATH</span><span class="p">)</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="o">-</span><span class="n">h</span>     <span class="p">:</span> <span class="nb">print</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="p">[</span> <span class="n">etc</span><span class="o">.</span> <span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="python-variable-types">Python - Variable Types</h2>
+<p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable, you reserve some space in memory.</p>
+<p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.</p>
+<h2 id="assigning-values-to-variables">Assigning Values to Variables</h2>
+<p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.</p>
+<p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span>
+<span class="normal"><a href="#__codelineno-13-6">6</a></span>
+<span class="normal"><a href="#__codelineno-13-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="n">counter</span> <span class="o">=</span> <span class="mi">100</span>          <span class="c1"># An integer assignment</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="n">miles</span>   <span class="o">=</span> <span class="mf">1000.0</span>       <span class="c1"># A floating point</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="n">name</span>    <span class="o">=</span> <span class="s2">&quot;John&quot;</span>       <span class="c1"># A string</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="mi">100</span> 
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="mf">1000.0</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="n">John</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="multiple-assignment">Multiple Assignment</h2>
+<p>Python allows you to assign a single value to several variables simultaneously. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">=</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></td></tr></table></div>
+<p>Here, an integer object is created with the value 1, and all three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;john&quot;</span>
+</code></pre></div></td></tr></table></div>
+<p>Here, two integer objects with values 1 and 2 are assigned to variables a and b, and one string object with the value "john" is assigned to the variable c.</p>
+<h2 id="standard-data-types">Standard Data Types</h2>
+<p>The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.</p>
+<p>Python has five standard data types −</p>
+<ul>
+<li>Numbers</li>
+<li>String</li>
+<li>List</li>
+<li>Tuple</li>
+<li>Dictionary</li>
+</ul>
+<h2 id="python-numbers">Python Numbers</h2>
+<p>Number data types store numeric values. Number objects are created when you assign a value to them. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="n">var1</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="n">var2</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre></div></td></tr></table></div>
+<p>You can also delete the reference to a number object by using the del statement. The syntax of the del statement is −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="k">del</span> <span class="n">var1</span><span class="p">[,</span><span class="n">var2</span><span class="p">[,</span><span class="n">var3</span><span class="p">[</span><span class="o">....</span><span class="p">,</span><span class="n">varN</span><span class="p">]]]</span>
+</code></pre></div></td></tr></table></div>
+<p>You can delete a single object or multiple objects by using the del statement. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">del</span> <span class="n">var</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="k">del</span> <span class="n">var_a</span><span class="p">,</span> <span class="n">var_b</span>
+</code></pre></div></td></tr></table></div>
+<p>Python supports four different numerical types −</p>
+<ul>
+<li>int (signed integers)</li>
+<li>long (long integers, they can also be represented in octal and hexadecimal)</li>
+<li>float (floating point real values)</li>
+<li>complex (complex numbers)</li>
+</ul>
+<p>Here are some examples of numbers −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nb">int</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="n">long</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="nb">float</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="nb">complex</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="python-strings">Python Strings</h2>
+<p>Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.</p>
+<p>The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span>
+<span class="normal"><a href="#__codelineno-21-6">6</a></span>
+<span class="normal"><a href="#__codelineno-21-7">7</a></span>
+<span class="normal"><a href="#__codelineno-21-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;Hello World!&#39;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>           <span class="c1"># Prints complete string</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>        <span class="c1"># Prints first character of the string</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>      <span class="c1"># Prints characters starting from 3rd to 5th</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>       <span class="c1"># Prints string starting from 3rd character  </span>
+<a id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>       <span class="c1"># Prints string two times</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span> <span class="o">+</span> <span class="s2">&quot;TEST&quot;</span><span class="p">)</span>  <span class="c1"># Prints concatenated string</span>
+</code></pre></div></td></tr></table></div>
+<p>This will produce the following result −</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">H</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">llo</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="n">llo</span> <span class="n">World</span><span class="err">!</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span><span class="n">TEST</span>
+</code></pre></div>
+<h2 id="python-lists">Python Lists</h2>
+<p>Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.</p>
+<p>The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span>
+<span class="normal"><a href="#__codelineno-23-5">5</a></span>
+<span class="normal"><a href="#__codelineno-23-6">6</a></span>
+<span class="normal"><a href="#__codelineno-23-7">7</a></span>
+<span class="normal"><a href="#__codelineno-23-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.2</span> <span class="p">]</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="n">tinylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>            <span class="c1"># Prints complete list</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>         <span class="c1"># Prints first element of the list</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>       <span class="c1"># Prints elements starting from 2nd till 3rd</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>        <span class="c1"># Prints elements starting from 3rd element</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinylist</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>    <span class="c1"># Prints list two times</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">list</span> <span class="o">+</span> <span class="n">tinylist</span><span class="p">)</span> <span class="c1"># Prints concatenated lists</span>
+</code></pre></div></td></tr></table></div>
+<p>This will produce the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span>
+<span class="normal"><a href="#__codelineno-24-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="p">[</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">]</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a><span class="n">abcd</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a><span class="p">[</span><span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">]</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a><span class="p">[</span><span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">]</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5"></a><span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6"></a><span class="p">[</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="python-tuples">Python Tuples</h2>
+<p>A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.</p>
+<p>The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span>
+<span class="normal"><a href="#__codelineno-25-5">5</a></span>
+<span class="normal"><a href="#__codelineno-25-6">6</a></span>
+<span class="normal"><a href="#__codelineno-25-7">7</a></span>
+<span class="normal"><a href="#__codelineno-25-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="nb">tuple</span> <span class="o">=</span> <span class="p">(</span> <span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.2</span>  <span class="p">)</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="n">tinytuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">)</span>             <span class="c1"># Prints complete tuple</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>          <span class="c1"># Prints first element of the tuple</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>        <span class="c1"># Prints elements starting from 2nd till 3rd</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>         <span class="c1"># Prints elements starting from 3rd element</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinytuple</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>     <span class="c1"># Prints tuple two times </span>
+<a id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span> <span class="o">+</span> <span class="n">tinytuple</span><span class="p">)</span> <span class="c1"># Prints concatenated tuple</span>
+</code></pre></div></td></tr></table></div>
+<p>This will produce the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span>
+<span class="normal"><a href="#__codelineno-26-4">4</a></span>
+<span class="normal"><a href="#__codelineno-26-5">5</a></span>
+<span class="normal"><a href="#__codelineno-26-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">)</span> 
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="n">abcd</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="p">(</span><span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">)</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="p">(</span><span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">)</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="mi">786</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.200000000000003</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="python-dictionary">Python Dictionary</h2>
+<p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.</p>
+<p>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span>
+<span class="normal"><a href="#__codelineno-27-4">4</a></span>
+<span class="normal"><a href="#__codelineno-27-5">5</a></span>
+<span class="normal"><a href="#__codelineno-27-6">6</a></span>
+<span class="normal"><a href="#__codelineno-27-7">7</a></span>
+<span class="normal"><a href="#__codelineno-27-8">8</a></span>
+<span class="normal"><a href="#__codelineno-27-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;This is one&quot;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>     <span class="o">=</span> <span class="s2">&quot;This is two&quot;</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="n">tinydict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span><span class="s1">&#39;code&#39;</span><span class="p">:</span><span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">}</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">])</span>       <span class="c1"># Prints value for &#39;one&#39; key</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="nb">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>           <span class="c1"># Prints value for 2 key</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="p">)</span>          <span class="c1"># Prints complete dictionary</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>   <span class="c1"># Prints all the keys</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">tinydict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="c1"># Prints all the values</span>
+</code></pre></div></td></tr></table></div>
+<p>This will produce the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span>
+<span class="normal"><a href="#__codelineno-28-3">3</a></span>
+<span class="normal"><a href="#__codelineno-28-4">4</a></span>
+<span class="normal"><a href="#__codelineno-28-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">one</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="n">This</span> <span class="ow">is</span> <span class="n">two</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="p">{</span><span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">}</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="p">[</span><span class="s1">&#39;dept&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">]</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5"></a><span class="p">[</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="data-type-conversion">Data Type Conversion</h2>
+<p>Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type-name as a function.</p>
+<p>There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.</p>
+<ul>
+<li><code>int(x [,base])</code> − Converts x to an integer. The base specifies the base if x is a string.</li>
+<li><code>long(x [,base] )</code> − Converts x to a long integer. The base specifies the base if x is a string.</li>
+<li><code>float(x)</code> − Converts x to a floating-point number.</li>
+<li><code>complex(real [,imag])</code> − Creates a complex number.</li>
+<li><code>str(x)</code> − Converts object x to a string representation.</li>
+<li><code>repr(x)</code> − Converts object x to an expression string.</li>
+<li><code>eval(str)</code> − Evaluates a string and returns an object.</li>
+<li><code>tuple(s)</code> − Converts s to a tuple.</li>
+<li><code>list(s)</code> − Converts s to a list.</li>
+<li><code>set(s)</code> − Converts s to a set.</li>
+<li><code>dict(d)</code> − Creates a dictionary. d must be a sequence of (key,value) tuples.</li>
+</ul>
+<h2 id="python-basic-operators">Python - Basic Operators</h2>
+<p>Operators are the constructs which can manipulate the value of operands. Consider the expression 4 + 5 = 9. Here, 4 and 5 are called operands and + is called operator.</p>
+<p>Python language supports the following types of operators − </p>
+<ul>
+<li>Arithmetic Operators</li>
+<li>Comparison (Relational) Operators</li>
+<li>Assignment Operators</li>
+<li>Logical Operators</li>
+<li>Bitwise Operators</li>
+<li>Membership Operators</li>
+<li>Identity Operators</li>
+</ul>
+<h2 id="python-decision-making">Python - Decision Making</h2>
+<p>Decision making is required when we want to execute a code only if a certain condition is satisfied.</p>
+<p>The <code>if…elif…else</code> statement is used in Python for decision making.</p>
+<h3 id="if-statement-syntax">if statement syntax</h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="k">if</span> <span class="n">expression</span><span class="p">:</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a>   <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Here, the program evaluates the <code>expression</code> and will execute <code>statement(s)</code> only if the <code>expression</code> is <code>True</code>.</p>
+<p>If the <code>expression</code> is <code>False</code>, the statement(s) is not executed.</p>
+<p>Python interprets non-zero values as <code>True</code>. <code>None</code> and <code>0</code> are interpreted as <code>False</code>.</p>
+<h3 id="ifelifelse-statement">if...elif...else statement</h3>
+<p>An <code>if</code> statement can be followed by an optional <code>elif...else</code> statement, which is very useful to test various conditions using single <code>if...elif...else</code> statement.</p>
+<p>Here is the syntax of <code>if...elif...else</code> statement −</p>
+<p>``` python tiyt="example.py" linenums="1"
+if expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>The `elif` is short for else if. It allows us to check for multiple expressions.
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>If the `expression1` is `True`, it executes the `statement(s)` that are present inside the `if` block. If `expression1` is `False`, it checks the `expression2` and executes the `statement(s)` that are present inside the `elif` block.
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>The `elif` block is `executed` if the `first` `expression` is `False`.
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>If none of the expressions is `True`, the `else` block is executed.
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>## Python - Loops
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>Python programming language provides following types of loops to handle looping requirements.
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>- `while` loop
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>- `for` loop
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>### The `while` Loop
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>
+<a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a>A `while` loop statement in Python programming language repeatedly executes a target statement as long as a given condition is `True`.
+<a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a>
+<a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a>Here, `statement(s)` may be a single statement or a block of statements. The `condition` may be any expression, and `true` is any non-zero value. The loop iterates while the `condition` is `true`.
+<a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a>
+<a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a>When the `condition` becomes `false`, program control passes to the line immediately following the loop.
+<a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a>
+<a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a>The syntax of a `while` loop in Python programming language is −
+<a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a>
+<a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a>``` python title=&quot;example.py&quot; linenums=&quot;1&quot;
+<a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a>while expression:
+<a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a>   statement(s)
+</code></pre></div></p>
+<p>Here, <code>statement(s)</code> may be a single statement or a block of statements. The <code>condition</code> may be any expression, and <code>true</code> is any non-zero value. The loop iterates while the <code>condition</code> is <code>true</code>.</p>
+<p>When the <code>condition</code> becomes <code>false</code>, program control passes to the line immediately following the loop.</p>
+<h3 id="the-for-loop">The <code>for</code> Loop</h3>
+<p>The <code>for</code> loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.</p>
+<p>The syntax of the <code>for</code> loop is as follows −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="k">for</span> <span class="n">iterating_var</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a>   <span class="n">statements</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>If a sequence contains an expression list, it is evaluated first. Then, the first item in the sequence is assigned to the iterating variable <code>iterating_var</code>. Next, the statements block is executed. Each item in the list is assigned to <code>iterating_var</code>, and the statement(s) block is executed until the entire sequence is exhausted.</p>
+<h2 id="python-functions">Python - Functions</h2>
+<p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+<p>As you already know, Python gives you many built-in functions like <code>print()</code>, etc. but you can also create your own functions. These functions are called user-defined functions.</p>
+<h3 id="defining-a-function">Defining a Function</h3>
+<p>You can define functions to provide the required functionality. Here are simple rules to define a function in Python.</p>
+<ul>
+<li>Function blocks begin with the keyword <code>def</code> followed by the function name and parentheses <code>( )</code>.</li>
+<li>Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li>
+<li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li>
+<li>The code block within every function starts with a colon (:) and is indented.</li>
+<li>The statement <code>return [expression]</code> exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as <code>return None</code>.</li>
+</ul>
+<h3 id="syntax">Syntax</h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="k">def</span> <span class="nf">functionname</span><span class="p">(</span> <span class="n">parameters</span> <span class="p">):</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>   <span class="s2">&quot;function_docstring&quot;</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a>   <span class="n">function_suite</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4"></a>   <span class="k">return</span> <span class="p">[</span><span class="n">expression</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>By default, parameters have a positional behavior and you need to inform them in the same order that they were defined.</p>
+<h3 id="example">Example</h3>
+<p>Here is a simple example of a function −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span>
+<span class="normal"><a href="#__codelineno-33-3">3</a></span>
+<span class="normal"><a href="#__codelineno-33-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="k">def</span> <span class="nf">printme</span><span class="p">(</span> <span class="nb">str</span> <span class="p">):</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a>   <span class="s2">&quot;This prints a passed string into this function&quot;</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a>   <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a>   <span class="k">return</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="calling-a-function">Calling a Function</h3>
+<p>Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.</p>
+<p>Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt. Following is the example to call printme() function −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-34-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-34-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-34-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-34-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-34-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-34-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-34-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-34-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-34-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="c1"># Function definition is here</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="k">def</span> <span class="nf">printme</span><span class="p">(</span> <span class="nb">str</span> <span class="p">):</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a>   <span class="s2">&quot;This prints a passed string into this function&quot;</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4"></a>   <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5"></a>   <span class="k">return</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6"></a>
+<a id="__codelineno-34-7" name="__codelineno-34-7"></a><span class="c1"># Now you can call printme function</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8"></a>
+<a id="__codelineno-34-9" name="__codelineno-34-9"></a><span class="n">printme</span><span class="p">(</span><span class="s2">&quot;I&#39;m first call to user defined function!&quot;</span><span class="p">)</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10"></a><span class="n">printme</span><span class="p">(</span><span class="s2">&quot;Again second call to the same function&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>This will produce the following result −</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">example.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="n">I</span><span class="s1">&#39;m first call to user defined function!</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a><span class="n">Again</span> <span class="n">second</span> <span class="n">call</span> <span class="n">to</span> <span class="n">the</span> <span class="n">same</span> <span class="n">function</span>
+</code></pre></div></td></tr></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/Nirajsah17/"  target="_blank" rel="noopener">Niraj Sah</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Nirajsah17/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/niraj71177480" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="http://linkedin.com/in/niraj-kumar-21142817b/" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
