@@ -52,6 +52,7 @@ nav:
   - Python Stack:
     - python_stack/python_programming.md
     - python_stack/snippet.md
+    - python_stack/RAG_part1.md
   - Examples: example.md
   - Packages:
     - package/observable.md
