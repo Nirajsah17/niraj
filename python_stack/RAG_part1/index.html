@@ -6,34 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Guide to computer vision and algorithms">
+        <meta name="description" content="This document provides an overview of the RAG stack and its components.">
       
       
-        <meta name="author" content="niraj kumar sah">
+        <meta name="author" content="niraj kumar">
       
       
-        <link rel="canonical" href="https://nirajsah17.github.io/Nirajsah17/computer_vision/">
+        <link rel="canonical" href="https://nirajsah17.github.io/Nirajsah17/python_stack/RAG_part1/">
       
       
-        <link rel="prev" href="../github-jekyl/">
+        <link rel="prev" href="../snippet/">
       
       
-        <link rel="next" href="../python_stack/python_programming/">
+        <link rel="next" href="../../example/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.0">
     
     
       
-        <title>Computer Vision - Niraj Kumar Sah</title>
+        <title>RAG Overview - Niraj Kumar Sah</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.45e1311d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#computer-vision" class="md-skip">
+        <a href="#part-1-how-rag-application-works" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Niraj Kumar Sah" class="md-header__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
+    <a href="../.." title="Niraj Kumar Sah" class="md-header__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Computer Vision
+              RAG Overview
             
           </span>
         </div>
@@ -209,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -228,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../github-jekyl/" class="md-tabs__link">
+        <a href="../../github-jekyl/" class="md-tabs__link">
           
   
   Github
@@ -242,13 +242,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../computer_vision/" class="md-tabs__link">
           
   
   Computer Vision
@@ -266,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../web_development/index.html" class="md-tabs__link">
+        <a href="../../web_development/index.html" class="md-tabs__link">
           
   
   Web Development
@@ -280,11 +278,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../python_stack/python_programming/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../python_programming/" class="md-tabs__link">
           
   
   Python Stack
@@ -300,7 +300,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../example/" class="md-tabs__link">
+      <a href="../../example/" class="md-tabs__link">
         
   
     
@@ -319,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../package/observable/" class="md-tabs__link">
+        <a href="../../package/observable/" class="md-tabs__link">
           
   
   Packages
@@ -354,7 +354,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Niraj Kumar Sah" class="md-nav__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
+    <a href="../.." title="Niraj Kumar Sah" class="md-nav__button md-logo" aria-label="Niraj Kumar Sah" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -372,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github-jekyl/" class="md-nav__link">
+      <a href="../../github-jekyl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,8 +457,6 @@
       
   
   
-    
-  
   
   
     
@@ -469,12 +467,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -488,7 +486,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Computer Vision
@@ -499,30 +497,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Computer Vision
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../computer_vision/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,35 +509,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#computer-vision_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Computer Vision 🖼️
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -619,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../web_development/index.html" class="md-nav__link">
+      <a href="../../web_development/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,8 +593,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -654,12 +605,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -673,7 +624,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Python Stack
@@ -687,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python_stack/python_programming/" class="md-nav__link">
+      <a href="../python_programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python_stack/snippet/" class="md-nav__link">
+      <a href="../snippet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,10 +677,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../python_stack/RAG_part1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    RAG Overview
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -738,6 +709,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-ragretrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is RAG(Retrieval Augmented Generation) ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-rag-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How RAG works?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -757,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
+      <a href="../../example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../package/observable/" class="md-nav__link">
+      <a href="../../package/observable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../package/queue/" class="md-nav__link">
+      <a href="../../package/queue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,18 +892,21 @@
                   
 
 
-<h1 id="computer-vision">Computer Vision<a class="toc-permalink" href="#computer-vision" title="Permanent link">&para;</a></h1>
-<h3 id="computer-vision_1">Computer Vision 🖼️<a class="toc-permalink" href="#computer-vision_1" title="Permanent link">&para;</a></h3>
-<p>The computer vision section explores techniques and technologies for enabling machines to interpret and understand visual information from the world. This area involves:</p>
-<ul>
-<li><strong>Image Processing:</strong> Techniques for manipulating and analyzing images, including filtering, transformation, and feature extraction.</li>
-<li><strong>Object Detection &amp; Recognition:</strong> Methods for identifying and locating objects within images or video streams, utilizing algorithms like YOLO, SSD, and Faster R-CNN.</li>
-<li><strong>Image Classification:</strong> Using machine learning models to classify images into categories, with frameworks like TensorFlow and PyTorch.</li>
-<li><strong>Feature Matching:</strong> Techniques for finding corresponding features between images, useful in applications like panorama stitching and 3D reconstruction.</li>
-<li><strong>Deep Learning for Vision:</strong> Leveraging convolutional neural networks (CNNs) and other deep learning architectures to tackle complex vision tasks.</li>
-<li><strong>Applications:</strong> Practical uses of computer vision in areas like augmented reality, facial recognition, autonomous vehicles, and medical imaging.</li>
-</ul>
-<p>This section includes hands-on projects, code implementations, and research papers that demonstrate the application of computer vision techniques in real-world scenarios.</p>
+<h1 id="part-1-how-rag-application-works">PART 1: How RAG application works<a class="toc-permalink" href="#part-1-how-rag-application-works" title="Permanent link">&para;</a></h1>
+<p><img src="../images/rag_part1.jpeg" alt="RAG Application" width="100%" height="65%"></p>
+<h2 id="introduction">Introduction<a class="toc-permalink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This is the first post of a complete series of posts that will cover every bits and pieces of RAG internals. We will mostly focus on intuitive understanding of technologies and concepts used in RAG. We will also cover the architecture and design of <strong>RAG</strong> in detail.</p>
+<p>Before doing anythings, the very obvious question that comes to our mind is what is RAG?. Why it is more popular now a days?.</p>
+<p>So to begin with let's first understand what is RAG.</p>
+<h2 id="what-is-ragretrieval-augmented-generation">What is RAG(Retrieval Augmented Generation) ?<a class="toc-permalink" href="#what-is-ragretrieval-augmented-generation" title="Permanent link">&para;</a></h2>
+<p>RAG is a technique for augmenting LLM knowledge with additional data.</p>
+<p>LLMs can reason about wide-ranging topics, but their knowledge is limited to the public data up to a specific point in time that they were trained on. If you want to build AI applications that can reason about private data or data introduced after a model's cutoff date, you need to augment the knowledge of the model with the specific information it needs. The process of bringing the appropriate information and inserting it into the model prompt is known as <strong>Retrieval Augmented Generation (RAG)</strong>.</p>
+<p>RAG is a technique for augmenting LLM knowledge with additional data. It is a combination of two models: a retriever and a generator. The retriever is responsible for finding relevant information from a large corpus of documents, while the generator is responsible for generating the final output.</p>
+<h2 id="how-rag-works">How RAG works?<a class="toc-permalink" href="#how-rag-works" title="Permanent link">&para;</a></h2>
+<p>RAG works by first retrieving relevant information from a large corpus of documents using a retriever model. The retriever model is trained to find the most relevant information given a query. Once the relevant information is retrieved, it is passed to a generator model, which generates the final output.</p>
+<p>If this make no sense to you, don't worry. We will go step by step and understand each component of RAG in detail.</p>
+<p>Let's take an example to understand it visually. If you are a developer you might have used chatgpt, gemini, anthropic, copilot or any other LLM model. These models are trained on large corpus of data and can generate human like text. But what if you want to generate text based on some specific data that is not present in the training data of these models. This is where RAG comes into picture. RAG can be used to augment the knowledge of these models with additional data.</p>
+<p><img src="../images/gpt_interaction.png" alt="RAG Application" width="100%" height="65%"></p>
 
 
 
@@ -984,10 +1005,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
