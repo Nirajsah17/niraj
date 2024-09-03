@@ -1,0 +1,34 @@
+{
+  "name": "store",
+  "__version__": "0.0.1",
+  "description": "A simple embeddings store",
+  "author": "nirajkumar",
+  "license": "MIT",
+  "users": {
+    "nirajkumar": {
+      "password": "password",
+      "email": "nirajnsp5@gmial.com",
+      "name": "Niraj Kumar",
+      "files": {
+        "fileId1": {
+          "name": "brief history of time",
+          "description": "Understand time in simple terms",
+          "type": "file",
+          "path": "files/fileId",
+          "size": 1000,
+          "text_chunk": [],
+          "embeddings": []
+        },
+        "fileId2": {
+          "name": "Time travel by Einstein",
+          "description": "Understand time travel in simple terms",
+          "type": "file",
+          "path": "files/fileId",
+          "size": 1000,
+          "text_chunk": [],
+          "embeddings": []
+        }
+      }
+    }
+  }
+}
