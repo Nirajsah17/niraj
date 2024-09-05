@@ -32,20 +32,11 @@ def save_embeddings(embeddings, chunks, fileId):
   return data
 
 def main(text):
-  response = generate_embeddings(text)
-  fileId = timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+  response = generating_embeddings(text)
+  fileId = datetime.now().strftime("%Y%m%d_%H%M%S")
   updated_json = save_embeddings(response["embeddings"], response["chunks"], fileId)
   json.dump(updated_json, open('embeddings.json', 'w'))
   return fileId
-  
-  
-
-
-
-
-
-
-
 
 def get_args():
   """
@@ -58,7 +49,7 @@ def get_args():
 
 
 
-if __name__ == "main":
+if __name__ == "__main__":
   args  = get_args()
   text_string = read_text_from_pdf(args.pdf_path)
   estimated = estimate_tokens(text_string)

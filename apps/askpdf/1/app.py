@@ -1,34 +1,34 @@
+import argparse
 from utils import generate_embeddings, split_into_chunk, find_cosine_similarity
 import tqdm
 import json
 from datetime import datetime
 
-chunks = split_into_chunk(text, chunk_size=500)
-embeddings = []
-for chunk in tqdm.tqdm(chunks, desc="proccessing chunks") :
-  embedding = generate_embeddings(chunk)
-  print(embedding)
-  print(chunk)
-  embeddings.append(embedding)
-
-data = None
-with open('embeddings.json', 'r') as file:
-  data = json.load(file)
 
 
+def get_relevant_chunk(query, document_id, n=0.8):
+  print("qqqq: ",query)
+  print("doc",document_id)
+  data = None
+  query_embedding = generate_embeddings(query)
+  with open('embeddings.json', 'r') as file:
+    data = json.load(file)
+  similarity_scores = find_cosine_similarity(query_embedding, data["files"][document_id]["embeddings"])
+  filtered_similarities = [score for score in similarity_scores if score[1] > n]
+  index = filtered_similarities[0][0]
+  text = data["files"][document_id]["chunks"][index]
+  return text
 
-fileId = timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-data["files"][fileId] = {
-  "filename": "ancient_indian.history.pdf",
-  "page_count": 20,
-  "total_tokens": 4569,
-  "chunks": chunks,
-  "embeddings": embeddings
-}
 
-json.dump(data, open('embeddings.json', 'w'))
-  
-query = "The earliest discovered instance ?"
-QUERY_EMBEDDINGS = generate_embeddings(query)
-res = find_cosine_similarity(QUERY_EMBEDDINGS, data["files"][fileId]["embeddings"])
-print(res)
+def get_args():
+  parser = argparse.ArgumentParser(description="find relevants chunk")
+  parser.add_argument("--doc_id", help="document id to search for ")
+  parser.add_argument("--query", help="question to ask ?")
+  return parser.parse_args()
+
+
+
+if __name__ == "__main__":
+  args  = get_args()
+  chunk_result = get_relevant_chunk(args.query, args.doc_id, 0.8)
+  print(chunk_result)
