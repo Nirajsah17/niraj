@@ -1,6 +1,8 @@
-from utils import generate_embeddings, split_into_chunk
+from utils import generate_embeddings, split_into_chunk, find_cosine_similarity
 import tqdm
 import pandas as pd
+import json
+from datetime import datetime
 
 text = """
 List of plugins that integrate with TerminalView
@@ -29,21 +31,31 @@ For testing stubs and general test structure the Javatar plugin (https://github.
 
 """
 
-chunks = split_into_chunk(text, chunk_size=20)
-print(chunks)
-embeddings = []
-for chunk in tqdm.tqdm(chunks, desc="proccessing chunks") :
-  embedding = generate_embeddings(chunk)
-  embeddings.append(embedding)
-# embeddings = generate_embeddings
-print(f"chunk length = {len(chunks)}")
-print(f"chun : \n", chunks)
+# chunks = split_into_chunk(text, chunk_size=80)
+# embeddings = []
+# for chunk in tqdm.tqdm(chunks, desc="proccessing chunks") :
+#   embedding = generate_embeddings(chunk)
+#   embeddings.append(embedding)
 
-print(f"embedding length = {len(embeddings)}")
-print(f"embedding : \n {embeddings}")
+data = None
+with open('embeddings.json', 'r') as file:
+  data = json.load(file)
 
 
-data_frame = pd.read_csv("users_embedding.csv")
-new_row = {'username': "niraj", "filename": "random.pdf", "page_count": 20, "total_tokens": 2345, "chunks": chunks, "embeddings": embeddings }
-data_frame = pd.concat([data_frame.iloc[:1], pd.DataFrame([new_row]), data_frame.iloc[1:]]).reset_index(drop=True)
-data_frame.to_csv("users_embedding.csv", index=False)
+
+# fileId = timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+# data["files"][fileId] = {
+#   "filename": "random.pdf",
+#   "page_count": 20,
+#   "total_tokens": 2345,
+#   "chunks": chunks,
+#   "embeddings": embeddings
+# }
+
+# json.dump(data, open('embeddings.json', 'w'))
+  
+query = "In this particular case a history"
+QUERY_EMBEDDINGS = generate_embeddings(query)
+
+find_cosine_similarity(QUERY_EMBEDDINGS, data["files"]["20240904_180052"]["embeddings"])
+
