@@ -7,7 +7,7 @@ keywords: RAG, RAG stack, RAG components, RAG architecture
 
 # PART 1: How RAG application works
 
-[RAG Application](../images/rag_part1.jpeg)
+![RAG Application](../images/rag_part1.jpeg)
 
 ## Introduction
 
