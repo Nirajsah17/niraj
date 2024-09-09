@@ -7,7 +7,7 @@ keywords: RAG, RAG stack, RAG components, RAG architecture
 
 # PART 1: How RAG application works
 
-<img src="../images/rag_part1.jpeg" alt="RAG Application" width="100%" height="65%">
+[RAG Application](../images/rag_part1.jpeg)
 
 ## Introduction
 
@@ -33,4 +33,4 @@ If this make no sense to you, don't worry. We will go step by step and understan
 
 Let's take an example to understand it visually. If you are a developer you might have used chatgpt, gemini, anthropic, copilot or any other LLM model. These models are trained on large corpus of data and can generate human like text. But what if you want to generate text based on some specific data that is not present in the training data of these models. This is where RAG comes into picture. RAG can be used to augment the knowledge of these models with additional data.
 
-![Alt Text](../images/RAG.png)
+![Alt RAG architecture](../images/RAG.png)
