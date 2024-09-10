@@ -28,9 +28,8 @@ theme:
       accent: lime
 
 plugins:
-  # - git-snippet
-#   - social
-#   - search
+  - search
+  - codeinclude
 
 extra:
   social:
@@ -53,6 +52,7 @@ nav:
     - python_stack/python_programming.md
     - python_stack/snippet.md
     - python_stack/RAG_part1.md
+    - python_stack/fast_api.md
   - Examples: example.md
   - Packages:
     - package/observable.md

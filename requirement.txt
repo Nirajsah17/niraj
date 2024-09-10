@@ -47,3 +47,4 @@ typing_extensions==4.12.2
 urllib3==2.2.1
 watchdog==4.0.0
 wrapt==1.16.0
+mkdocs-codeinclude-plugin

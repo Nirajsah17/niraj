@@ -36,3 +36,54 @@ pip install fastapi
 
 Here is a simple example of a FastAPI application:
 
+<!--codeinclude-->
+[hello world](../../src/fastapi/hello.py) 
+`hello.py`
+<!--/codeinclude-->
+
+```bash
+  # To run the app use following command where hello is the name of the file specify port using --port
+  uvicorn hello:app --reload --port 8000
+
+```
+
+## URL Path 
+
+
+<!--codeinclude-->
+[url path](../../src/fastapi/path.py)
+`url_path.py`
+<!--/codeinclude-->
+
+
+
+## Query Parameters
+
+<!--codeinclude-->
+[URI parameter](../../src/fastapi/query_params.py) 
+`params.py`
+<!--/codeinclude-->
+
+## Request Body
+
+<!--codeinclude-->
+[request body](../../src/fastapi/data_model_validation.py)
+`request_body.py`
+<!--/codeinclude-->
+
+## FormData and File Uploads
+
+<!--codeinclude-->
+[form data](../../src/fastapi/formdata.py)
+`form_data.py`
+<!--/codeinclude-->
+
+## Authentication
+
+<!--codeinclude-->
+[authentication](../../src/fastapi/oauth2.py)
+`authentication.py`
+<!--/codeinclude-->
+
+
+
