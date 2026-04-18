@@ -59,6 +59,12 @@ nav:
     - package/queue.md
   - Modern India:
     - modern_india/1_european_trading_comapny.md
+    - modern_india/2_dutch.md
+    - modern_india/3_brtish_east_india_company.md
+    - modern_india/3.2_brtish_east_inida_company_elaoborative.md
+
+
+
 
 
 markdown_extensions:
