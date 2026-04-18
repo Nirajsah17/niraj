@@ -20,7 +20,7 @@ It was a royal monopoly and a joint stock company. It reached india in 1498, **V
 
 During his 3 months long stay in india he gathered exotic indian **spices including pepper**, and other indian goods like **silk , gems(precious metal), rare herbs** which he sold at huge profits after returning back to portugal. His second visit was in 1502 but this time he was interested in building factory(Warehouse) so that he can increase the flow of trade through it. Portugues still manage to build factory despite strained relation with **Zamoorin** and challenge from Arab's.
 
-  #### Factories
+#### Factories
 
   1. Calicut(Kozhikode)
   2. Cochin(Kochi)
@@ -30,7 +30,7 @@ During his 3 months long stay in india he gathered exotic indian **spices includ
   Other factories are **Mangalore**, Hanover, Bhatkal, Cambay, Diu, Bassein(Treaty of Bassein), Surat, Daman.
   Early head-quarter was at cochin, later it was shifted to Goa by Nino da Cunha
 
-  #### Items of Trade
+#### Items of Trade
 
   1. Monopoly over spices mainly black pepper
   2. Monopoly over horse
@@ -40,7 +40,7 @@ During his 3 months long stay in india he gathered exotic indian **spices includ
   6. Slave trade
   7. Elephant Exported
 
-  #### Governor General(GG)
+#### Governor General(GG)
 
   **Francisco de Almeida** he was the first real Portuguese Governor General and was responsible for establishment of Portuguese Empire in India. He began to cosnsolidate portuguese interest in India by building Forts around the settlement. Cannanore(F.S Angelo), Cochin (Fort manuel), Anjediva(S. Miguel). He gave the blue water policy, blue water policy was issued by Francisco de Almeida Obtained to established portuguese supremacy over Indian Ocean by building strong Naval force rather than territorial expansion on land.
 
@@ -67,7 +67,7 @@ During his 3 months long stay in india he gathered exotic indian **spices includ
 
     It is a narrow maritime passage linking Indian ocean with south China sea , Its one of the world bussiest shipping lanes carrying a significantly share of global trade and energy supply , making it stratigically vital for Asia and Global Commerce.
   
-  #### Contribution of Portuguese
+#### Contribution of Portuguese
 
   * Cultivation of **Tobaco Potatoes, Pine Apple, Chille, and Tomatoes**.
   * **First Printing Press** in Goa (1556)
