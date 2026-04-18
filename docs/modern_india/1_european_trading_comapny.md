@@ -8,13 +8,16 @@ keywords: History, Modern India, EIC
 
 # European Trading Company
 
+![ETC](../images/notes/ETC_intro.png)
+
+![Transioned to Modern India](../images/notes/transitioned_to_modern_india.png)
+
 ## Introduction
 In **1453**, the city of **Constantinople** was captured by the **Ottoman Turks**. Following this, Arab merchants came to dominate the land and sea routes in the Middle East. Consequently, Europeans became dependent on Arab intermediaries who monopolized the Red Sea routes connecting European markets with Asia. In this situation, Europeans were eager to find an alternative sea route to the Indian subcontinent to eliminate their dependency on Arab merchants. This led to the discovery of a direct sea route, which was the first step toward the process of **Imperialism** by European powers in **Asia** and **Africa**.
 
 ---
 
 
-![Transioned to Modern India](../images/notes/transitioned_to_modern_india.png)
 
 
 ## Portuguese East India Company
