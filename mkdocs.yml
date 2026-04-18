@@ -57,6 +57,9 @@ nav:
   - Packages:
     - package/observable.md
     - package/queue.md
+  - Modern India:
+    - modern_india/1_european_trading_comapny.md
+
 
 markdown_extensions:
   - toc:

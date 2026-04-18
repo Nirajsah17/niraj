@@ -212,3 +212,11 @@
 !**/data/**/*.yml
 !**/data/**/*.csv
 !**/data/**/*.json
+apps/askpdf/1/.env
+
+# Security: Never allow .env files or credentials
+.env
+.env.*
+secrets.yml
+*.pem
+*.key
