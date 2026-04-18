@@ -13,6 +13,10 @@ In **1453**, the city of **Constantinople** was captured by the **Ottoman Turks*
 
 ---
 
+
+![Transioned to Modern India](../images/notes/transitioned_to_modern_india.png)
+
+
 ## Portuguese East India Company
 The Portuguese venture was a royal monopoly and a joint-stock company. They reached India in **1498** when **Vasco da Gama** arrived at Calicut via the **Cape of Good Hope**. He became the first European to successfully sail from Europe to India directly, bypassing the traditional Caravan Silk Route.
 
